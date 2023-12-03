@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="RO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+
+    <link rel="icon" href="Content/Images/Icons/music_site-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Formular de contact</title>
+</head>
+<body>
+    
+    <header>
+
+        <h1 id="titlu_paginii">Formular de contact</h1>
+        
+    </header>
+
+    <nav>
+        <div>
+            <a class="menu_option" href="biografie.html">Despre mine</a>
+        </div>
+        <br>
+        <div>
+            <a class="menu_option" href="contact.html">Contact</a>
+        </div>
+        <br>
+        <div>
+            <a class="menu_option" href="formular de contact.html">Scrie-mi un mesaj</a>
+        </div>
+    </nav>
+
+    <main class="abilitati">
+
+        <p><h2 class="menu_option">Scrie-mi aici un mesaj in formularul de mai jos si completeaza campurile necesare</h2></p>
+    
+        <form autocomplete="on">
+            <fieldset>
+                <legend>Formular</legend>
+                <input type="text" placeholder="Nume/prenume" required> 
+                <br>
+                <p>Data nasterii</p>
+                <input type="date" placeholder="Data nasterii" required>
+                <br><br>
+                <input type="email" placeholder="E-mail" required>
+                <br><br>
+                <input type="tel" placeholder="Telefon" required>
+                <br><br>
+                <input type="number" placeholder="Varsta" min="10" max="80">
+            
+                <br>
+        
+                <p>Gen</p>
+                <input name="gender_select" id="gender_male" type="radio">
+                <label for="gender_male">Masculin</label>
+                <input name="gender_select" id="gender_female" type="radio">
+                <label for="gender_female">Feminin</label>
+                <input name="gender_select" id="gender_neutral" type="radio" disabled>
+                <label for="gender_neutral">Nedeterminat</label>
+                
+                </fieldset>
+    
+                <p>Ocupatia(selecteaza din lista)</p>
+                <select name="ocupatia" required>
+                <option value="ocupatia">Elev/student</option>
+                <option value="ocupatia">Liber profesionist</option>
+                <option value="ocupatia">Somer</option>
+                <option value="ocupatia">Angajat oficial</option>
+                <option value="ocupatia">Pensionar</option>
+                <option value="ocupatia">Concediu</option>
+                </select>
+    
+                <br><br>
+    
+                <label for="message"></label>
+                <textarea required minlength="50" cols="50" rows="10" name="Scrie mesajul tau aici" id="message" placeholder="Mesajul tau aici..." aria-required="true"></textarea>
+                
+                <br>
+                <br>
+    
+                <input type="checkbox" id="agree" name="agree" value="accept"> 
+                <label for="agree">Sa primesc raspuns cat de curand posibil</label>
+                <br>
+                <input type="checkbox" id="accept1" name="accept1" value="accept1" required>
+                <label for="accept1">Sunt de acord cu termenii si conditiile <a href="https://en.wikipedia.org/wiki/End-user_license_agreement">EULA</a></label>
+                <br>
+                <br>
+                <input type="submit" value="Trimite" name="Send" >
+                <input type="reset" value="reset" name="Reset" />
+                
+        </form>
+    </main>
+
+    <footer id="footer_style">
+
+        <h1><a href="#titlu_paginii" id="citat_subtitlu">⬆︎ Mergi sus ⬆︎</a></h1>
+
+        <p id="citat_subtitlu">©2023 Toate drepturile sunt rezervate</p>
+
+    </footer>
+</body>
+</html>
