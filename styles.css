@@ -1,7 +1,7 @@
 
     body {
     margin: 0;
-    padding: 0;
+    padding: 0%;
     background-attachment: fixed;
     background-size: cover;
 
@@ -25,23 +25,26 @@
     z-index: -100;
     }
 
-    .main_section {
+    .mainSection {
         box-shadow: inset 2000px 0 0 0 rgba(65, 64, 64, 0.5);
         border-color: rgba(0, 0, 0, 1);
+        margin-left: 0;
     }
 
     .container {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
+        justify-content: flex-start;
         flex-wrap: wrap;
-        align-content: flex-start;
+        align-content: space-around;
         column-gap: 1em;
         row-gap: 2em;       
+        padding: 10px 10px 10px 10px;
     }
 
-    .card_info_content {
+    .cardContent {
+        display: none;
         width: 250px;
         height: 300px;
         /* border: solid 2px snow;
@@ -50,6 +53,13 @@
         text-align: center;
         padding-top: 10px;
         padding-bottom: 10px;
+        cursor: pointer;
+    }
+
+    .cardContent:hover {
+        transform: scale(1.20);
+        transition: all 100ms ease-in ;
+        
     }
 
     nav {
@@ -128,11 +138,21 @@
         color: dodgerblue;
     }
 
-    .citat_subtitlu {
+    .citatSubtitlu {
         display: block;
         margin-top: 5%;
         margin-left: 5%;
         margin-bottom: 20%;
         text-align: end;
         font-size: larger;
+    }
+
+    #load {
+        border: solid black;
+        border-radius: 20px;
+        padding: 15px 15px 15px 15px;
+        background-color: chocolate;
+        color: aliceblue;
+        margin: 5%;
+        cursor: pointer;
     }
